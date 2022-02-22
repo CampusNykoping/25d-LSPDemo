@@ -1,12 +1,15 @@
 ﻿using DemoLibrary;
 
-Manager accountingVP = new Manager();
+IManager accountingVP = new Manager();
 
 accountingVP.FirstName = "Emma";
 accountingVP.LastName = "Stone";
 accountingVP.CalculatePerHourRate(4);
 
-Employee emp = new CEO();
+//Employee emp = new Employee();
+//Employee emp = new Manager(); 
+//BaseEmployee emp = new CEO(); 
+IManaged emp = new Manager();
 
 emp.FirstName = "Claes";
 emp.LastName = "Engelin";
